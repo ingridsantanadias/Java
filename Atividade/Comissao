@@ -1,0 +1,10 @@
+
+public interface Commission {
+  
+    double COMMISSION_RATE = 0.10;  // A taxa constante de comissão
+    void setSales(double sales);    // Método para definir as vendas
+}
+// O public interface é usado para definnir um contrato de métodos que as classes podem implementar.
+// Elas especificam o "o quê" , mas não o "como", deixando a implementação para as classes.
+// Nesse caso, essa interface vai especificar um atributo comum 
+// e declara um comportamneto comum a todos os trabalhadores comissionados.
