@@ -1,0 +1,12 @@
+public class ExcecaoDadoInvalido extends Exception {
+
+    public ExcecaoDadoInvalido() {
+        super("*** Informação digitada invalida ***");
+
+    }
+
+    public ExcecaoDadoInvalido(String mensagem) {
+        super(mensagem);
+    }
+
+}
