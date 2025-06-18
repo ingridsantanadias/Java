@@ -12,6 +12,7 @@ public class Principal {
         System.out.println(" 1 - Aluno");
         System.out.println(" 2 - Aluno Monitoria");
         System.out.println(" 3 - Aluno Iniciacao Cientifica ");
+        System.out.println("4 - Sair");
         escolha = scanner.nextInt();
         scanner.nextLine();
         
