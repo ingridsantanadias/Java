@@ -1,0 +1,33 @@
+package com.mycompany.principal;
+
+public class AlunoMonitoria extends AlunoProjeto {
+
+    private String disciplina;
+
+    public AlunoMonitoria(String nome, int matricula, int periodo, String area, double valor, String disciplina) {
+        super(nome, matricula, periodo, area, valor);
+        this.disciplina = disciplina;
+    }
+
+    public AlunoMonitoria() {
+    }
+
+    public String getMonitoria() {
+        return disciplina;
+    }
+
+    public void setDisciplina(String disciplina) throws ExcecaoDadoInvalido {
+        if (disciplina == null) {
+            throw new ExcecaoDadoInvalido();
+        }
+        this.disciplina = disciplina;
+    }
+
+    @Override
+    public void mostrarInformacao() {
+        super.mostrarInformacao();
+        System.out.println("Disciplina da monitoria" + disciplina);
+
+    }
+
+}
